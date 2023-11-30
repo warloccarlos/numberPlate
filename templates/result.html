@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="fs-4 p-2 m-2 bg-success-subtle">
+        Your lucky options for Plate Numbers:
+    </div>
+    <span class="m-2 fs-6">There are {{ count }} Lucky numbers for you.</span>
+    <div class="m-2 p-3 text-light" style="background-color: rgb(40, 120, 80)">
+        {% for o in options %}
+            {{ o }}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
